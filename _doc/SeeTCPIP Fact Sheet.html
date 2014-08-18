@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!--link rel="stylesheet" type="text/css" href="_defs.css" /-->
+<title>SeeTCPIP Fact Sheet(release 1.5.9)</title>
+</head>
+
+<body style="color:Blue;">
+
+<h1 style="color:Black;">SeeTCPIP Fact Sheet(release 1.5.9)</h1>
+
+<div style="border:solid; padding:10px;">
+<h2 style="color:Black;">Product Description</h2>
+<p>
+SeeTCPIP provides a detailed view and analysis tool for your TCP/IP stack(s) running on VSE.  The product allows you to watch network activity on your systems in real-time and produces historical charts and reports.  It allows you to see what applications, interfaces, hosts, foreign IP addresses, and connections are consuming the most system resources.  SeeTCPIP also provides an interactive command interface.  It provides a rich, simple user-interface allowing users with varied expertise to benefit and successfully monitor your mission critical mainframe operation.  
+</p>
+</div>
+
+<div style="border:inset; padding:10px;">
+<h2 style="color:Black;">Features</h2>
+<h3>Monitor Highlights</h3>
+<ul>
+<li>Network activity/efficiency and client counts filtered by protocol/port (IP,TCP,UDP,ICMP,Telnet,FTP,HTTP,LP,GPS).</li>
+<li>Misrouted, discarded, and unsupported packets</li>
+<li>Checksum and datagram length errors</li>
+<li>Rejected connections</li>
+<li>Individual connections filtered by foreign ip, BSDC socket connection, CICS transaction, inbound/outbound byte counts, retransmits, port, PID, and more.</li>
+<li>FTP users, sessions, and transactions.</li>
+<li>TCP/IP Dispatcher including dispatch counts, time, waits and storage releases.</li>
+<li>Turbo Dispatcher CPU activity including Job/Step information and SIO counts.</li>
+</ul>
+<h3>TCP/IP Command Console</h3>
+<ul>
+<li>Issue commands directly to TCPIP.</li>
+<li>View console messages in real-time and historically.</li>
+<li>Provides interactive help and feedback on all CSI TCP/IP commands and messages.</li>
+</ul>
+</div>
+
+<div style="border:inset; padding:10px;">
+<h2 style="color:Black;">Technical Details</h2>
+<ul>
+<li>(Mainframe) Must be running CSI TCPIP 1.5E.</li>
+<li>(PC) Must be running Windows 2000, XP, or Vista(testing in progress).</li>
+<li>(PC) Stores all data and handles all user interaction, thus eliminating most overhead from the customers mainframe system.</li>
+</ul>
+</div>
+
+<div style="border:inset; padding:10px;">
+<h2 style="color:Black;">Release Notes</h2>
+<h4>The user-interface has been significantly redesigned.</h4>
+<h4>The product has been divided into two components.</h4>
+<ol>
+<li>Network communications and data collection are run and controlled silently as a "Windows Service".</li>
+<li>The user-interface is a completely separate component that runs as a "Windows Application".</li>
+</ol>
+<p>
+This allows the user to set up all of the TCP/IP systems that they are interested in and then start the "Windows Service" once and leave it running.  Once this is done, they can open and close the "Windows Application" at any time to view their system(s) activity.  So as long as the the "Windows Service" is running, information is collected on all configured systems.
+</p>
+</div>
+
+<div style="border:inset; padding:10px;">
+<h2 style="color:Black;">Future Plans</h2>
+<ul>
+<li>Packet Trace Data - a detailed view of packet data. (I actually hope to have this finished for 1.5.9 but am not allowing it to delay the release)</li>
+<li>Network Alerts - a feature that will allow customers to be notified if certain levels are exceeded.</li>
+</ul>
+</div>
+
+</body>
+</html>

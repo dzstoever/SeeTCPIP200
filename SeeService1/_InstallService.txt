@@ -1,0 +1,9 @@
+Post Build Event
+copy "$(TargetPath)" "C:\TEST\"
+copy "$(TargetDir)*.dll" "C:\TEST\"
+
+To manually install a service:
+->installutil SeeService1.exe
+
+To manually uninstall a service:
+->installutil /u SeeService1.exe

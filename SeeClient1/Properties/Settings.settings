@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="csi.see.client1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FOLDERDB" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SQLDB</Value>
+    </Setting>
+    <Setting Name="FOLDERPCAP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PCAP</Value>
+    </Setting>
+    <Setting Name="UDPSEND" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5451</Value>
+    </Setting>
+    <Setting Name="UDPRECV" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5452</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

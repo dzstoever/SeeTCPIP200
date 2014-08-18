@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E286BC0-8397-4BEC-A9DA-926F44B50E97}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ConsoleRecords</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ConsoleRecords</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/ConsoleRecords/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SeeConnectorOnly|AnyCPU' ">
+    <OutputPath>bin\SeeConnectorOnly\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nsoftware.IPWorks, Version=6.0.1826.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\nsoftware.IPWorks.dll</HintPath>
+    </Reference>
+    <Reference Include="nsoftware.System, Version=1.0.1425.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\nsoftware.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FtpTerminationConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FtpTerminationRecord.cs" />
+    <Compile Include="JobStepTerminationConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobStepTerminationRecord.cs" />
+    <Compile Include="ManageRecs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Console.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsoleDispatcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConsolePrintUtility.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManageCM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Constraint.cs" />
+    <Compile Include="HistoryDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListConstraint.cs" />
+    <Compile Include="MessageCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumericRangeConstraint.cs" />
+    <Compile Include="Pageable.cs" />
+    <Compile Include="PageableConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecFtp.cs" />
+    <Compile Include="RecJobStep.cs" />
+    <Compile Include="ManConnectionRecs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManFtpRecs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManJobStepRecs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManStartupRecs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManTcpipMessages.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConsoleDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RecStartup.cs" />
+    <Compile Include="Rtf.cs" />
+    <Compile Include="ScrollEnhancedRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SeeVseStartupConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeeVseStartupRecord.cs" />
+    <Compile Include="StatusEventArgs.cs" />
+    <Compile Include="TcpIpCommand.cs" />
+    <Compile Include="TcpIpCommandDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TcpIpCommandPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TcpIpCommandTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TcpIpConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecConnection.cs" />
+    <Compile Include="TcpIpMessage.cs" />
+    <Compile Include="TcpIpMessageCode.cs" />
+    <Compile Include="TcpIpMessageDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TcpIpMessageTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TcpIpTerminationConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TcpIpTerminationRecord.cs" />
+    <Compile Include="VirtualField.cs" />
+    <Compile Include="VirtualProperty.cs" />
+    <EmbeddedResource Include="FtpTerminationConsole.resx">
+      <DependentUpon>FtpTerminationConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobStepTerminationConsole.resx">
+      <DependentUpon>JobStepTerminationConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="ManageRecs.resx">
+      <DependentUpon>ManageRecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandCenter.resx">
+      <DependentUpon>CommandCenter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Console.resx">
+      <DependentUpon>Console.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsoleDispatcher.resx">
+      <DependentUpon>ConsoleDispatcher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsolePrintUtility.resx">
+      <DependentUpon>ConsolePrintUtility.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCM.resx">
+      <DependentUpon>ManageCM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryDropDown.resx">
+      <DependentUpon>HistoryDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManConnectionRecs.resx">
+      <DependentUpon>ManConnectionRecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManFtpRecs.resx">
+      <DependentUpon>ManFtpRecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManJobStepRecs.resx">
+      <DependentUpon>ManJobStepRecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManStartupRecs.resx">
+      <DependentUpon>ManStartupRecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManTcpipMessages.resx">
+      <DependentUpon>ManTcpipMessages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsoleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConsoleDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageCenter.resx">
+      <DependentUpon>MessageCenter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageableConsole.resx">
+      <DependentUpon>PageableConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollEnhancedRichTextBox.resx">
+      <DependentUpon>ScrollEnhancedRichTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeVseStartupConsole.resx">
+      <DependentUpon>SeeVseStartupConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpCommandDropDown.resx">
+      <DependentUpon>TcpIpCommandDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpCommandPropertyGrid.resx">
+      <DependentUpon>TcpIpCommandPropertyGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpCommandTree.resx">
+      <DependentUpon>TcpIpCommandTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpConsole.resx">
+      <DependentUpon>TcpIpConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpMessageDropDown.resx">
+      <DependentUpon>TcpIpMessageDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpMessageTree.resx">
+      <DependentUpon>TcpIpMessageTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpIpTerminationConsole.resx">
+      <DependentUpon>TcpIpTerminationConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ConsoleDataSet.xsc">
+      <DependentUpon>ConsoleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConsoleDataSet.xss">
+      <DependentUpon>ConsoleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConsoleDataSet.xsx">
+      <DependentUpon>ConsoleDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeeClassLib1\SeeClassLib1.csproj">
+      <Project>{19D4DE9C-32EF-4234-88D5-7FEE914D2353}</Project>
+      <Name>SeeClassLib1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,41 @@
+SeeTCP/IP for VSE(1.6.4) Release Notes
+
+Supported Operating Systems
+-Windows 2000/NT
+-Windows XP
+-Windows Vista
+
+Required Prerequisites
+-.Net Framework 2.0 -or- .Net Framework 3.5
+-Microsoft Sql Server(2005 -or- 2008)
+
+Installation Instructions
+1) 	Prior to installation verify that you have a supported version of the .Net framework installed
+	Prior to installlation verify that you have one of the following Sql Servers installed and running
+	- Microsoft Sql Server 2005 -or- Microsoft Sql Server 2005 Express(Free)
+	- Microsoft Sql Server 2008 -or- Microsoft Sql Server 2008 Express(Free)
+	1a) Note: Running 'setup.exe' will attempt to install the following prerequisites
+		- .Net Framework 2.0
+		- Microsoft Sql Server 2005 Express
+	1b) Note: If necessary these components can be downloaded and installed manually from Microsoft.
+
+2) Run SetupSee.msi
+
+3) Launch SeeTCPIP from the desktop shortcut
+	3a) Note: For security reasons Windows Vista may require you to start the following service manually:
+		'Control Panel -> Administrative Tools -> Services -> SeeTCP/IP for VSE' 
+		prior to launching the SeeTCPIP application.
+
+4(optional) If using a Sql Server other than 'Microsoft Sql Server 2005 Express' click the following menu:
+	Application -> Configuration Utility
+	4a)Under 'Change Sql Server\Instance Name' enter your local machine and sql server intance as follows:
+			'MyMachineName\MyInstanceName'
+	4b) Click "Check Connection" button
+	4c) If test is successful, Click "Save New Sql Server"
+	4d) Exit the application and restart from Step 3
+
+5) Click the following menu:
+	Application -> Systems Manager
+	5a)Enter the appropriate information for each of your properly configured TCP/IP for VSE stacks
+	5b)Note: There may be a delay while each new system initializes
+	

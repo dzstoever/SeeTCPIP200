@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsetConns" targetNamespace="http://tempuri.org/dsetConns.xsd" xmlns:mstns="http://tempuri.org/dsetConns.xsd" xmlns="http://tempuri.org/dsetConns.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsetConns" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsetConns" msprop:Generator_DataSetName="dsetConns">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TrafficStats" msprop:Generator_UserTableName="TrafficStats" msprop:Generator_RowDeletedName="TrafficStatsRowDeleted" msprop:Generator_TableClassName="TrafficStatsDataTable" msprop:Generator_RowChangedName="TrafficStatsRowChanged" msprop:Generator_RowClassName="TrafficStatsRow" msprop:Generator_RowChangingName="TrafficStatsRowChanging" msprop:Generator_RowEvArgName="TrafficStatsRowChangeEvent" msprop:Generator_RowEvHandlerName="TrafficStatsRowChangeEventHandler" msprop:Generator_TablePropName="TrafficStats" msprop:Generator_TableVarName="tableTrafficStats" msprop:Generator_RowDeletingName="TrafficStatsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Dtime" msprop:Generator_UserColumnName="Dtime" msprop:Generator_ColumnPropNameInRow="Dtime" msprop:Generator_ColumnVarNameInTable="columnDtime" msprop:Generator_ColumnPropNameInTable="DtimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PID" msprop:Generator_UserColumnName="PID" msprop:Generator_ColumnPropNameInRow="PID" msprop:Generator_ColumnVarNameInTable="columnPID" msprop:Generator_ColumnPropNameInTable="PIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Phase" msprop:Generator_UserColumnName="Phase" msprop:Generator_ColumnPropNameInRow="Phase" msprop:Generator_ColumnVarNameInTable="columnPhase" msprop:Generator_ColumnPropNameInTable="PhaseColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Local_x0020_Port" msprop:Generator_UserColumnName="Local Port" msprop:Generator_ColumnPropNameInRow="Local_Port" msprop:Generator_ColumnVarNameInTable="columnLocal_Port" msprop:Generator_ColumnPropNameInTable="Local_PortColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Foreign_x0020_Port" msprop:Generator_UserColumnName="Foreign Port" msprop:Generator_ColumnPropNameInRow="Foreign_Port" msprop:Generator_ColumnVarNameInTable="columnForeign_Port" msprop:Generator_ColumnPropNameInTable="Foreign_PortColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Foreign_x0020_IP" msprop:Generator_UserColumnName="Foreign IP" msprop:Generator_ColumnPropNameInRow="Foreign_IP" msprop:Generator_ColumnVarNameInTable="columnForeign_IP" msprop:Generator_ColumnPropNameInTable="Foreign_IPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Connection_x0020_State" msprop:Generator_UserColumnName="Connection State" msprop:Generator_ColumnPropNameInRow="Connection_State" msprop:Generator_ColumnVarNameInTable="columnConnection_State" msprop:Generator_ColumnPropNameInTable="Connection_StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Start_x0020_Time" msprop:Generator_UserColumnName="Start Time" msprop:Generator_ColumnPropNameInRow="Start_Time" msprop:Generator_ColumnVarNameInTable="columnStart_Time" msprop:Generator_ColumnPropNameInTable="Start_TimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Inbound_x0020_Bytes" msprop:Generator_UserColumnName="Inbound Bytes" msprop:Generator_ColumnPropNameInRow="Inbound_Bytes" msprop:Generator_ColumnVarNameInTable="columnInbound_Bytes" msprop:Generator_ColumnPropNameInTable="Inbound_BytesColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Outbound_x0020_Bytes" msprop:Generator_UserColumnName="Outbound Bytes" msprop:Generator_ColumnPropNameInRow="Outbound_Bytes" msprop:Generator_ColumnVarNameInTable="columnOutbound_Bytes" msprop:Generator_ColumnPropNameInTable="Outbound_BytesColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Inbound_x0020_Datagrams" msprop:Generator_UserColumnName="Inbound Datagrams" msprop:Generator_ColumnPropNameInRow="Inbound_Datagrams" msprop:Generator_ColumnVarNameInTable="columnInbound_Datagrams" msprop:Generator_ColumnPropNameInTable="Inbound_DatagramsColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Outbound_x0020_Datagrams" msprop:Generator_UserColumnName="Outbound Datagrams" msprop:Generator_ColumnPropNameInRow="Outbound_Datagrams" msprop:Generator_ColumnVarNameInTable="columnOutbound_Datagrams" msprop:Generator_ColumnPropNameInTable="Outbound_DatagramsColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Receives_x0020_Issues" msprop:Generator_UserColumnName="Receives Issues" msprop:Generator_ColumnPropNameInRow="Receives_Issues" msprop:Generator_ColumnVarNameInTable="columnReceives_Issues" msprop:Generator_ColumnPropNameInTable="Receives_IssuesColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sends_x0020_Issued" msprop:Generator_UserColumnName="Sends Issued" msprop:Generator_ColumnPropNameInRow="Sends_Issued" msprop:Generator_ColumnVarNameInTable="columnSends_Issued" msprop:Generator_ColumnPropNameInTable="Sends_IssuedColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Max_x0020_Receive_x0020_Window" msprop:Generator_UserColumnName="Max Receive Window" msprop:Generator_ColumnPropNameInRow="Max_Receive_Window" msprop:Generator_ColumnVarNameInTable="columnMax_Receive_Window" msprop:Generator_ColumnPropNameInTable="Max_Receive_WindowColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Max_x0020_Send_x0020_Window" msprop:Generator_UserColumnName="Max Send Window" msprop:Generator_ColumnPropNameInRow="Max_Send_Window" msprop:Generator_ColumnVarNameInTable="columnMax_Send_Window" msprop:Generator_ColumnPropNameInTable="Max_Send_WindowColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Nof_x0020_Times_x0020_Receive_x0020_Window_x0020_Closed" msprop:Generator_UserColumnName="Nof Times Receive Window Closed" msprop:Generator_ColumnPropNameInRow="Nof_Times_Receive_Window_Closed" msprop:Generator_ColumnVarNameInTable="columnNof_Times_Receive_Window_Closed" msprop:Generator_ColumnPropNameInTable="Nof_Times_Receive_Window_ClosedColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Nof_x0020_Times_x0020_in_x0020_Retransmit" msprop:Generator_UserColumnName="Nof Times in Retransmit" msprop:Generator_ColumnPropNameInRow="Nof_Times_in_Retransmit" msprop:Generator_ColumnVarNameInTable="columnNof_Times_in_Retransmit" msprop:Generator_ColumnPropNameInTable="Nof_Times_in_RetransmitColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Retransmits" msprop:Generator_UserColumnName="Retransmits" msprop:Generator_ColumnPropNameInRow="Retransmits" msprop:Generator_ColumnVarNameInTable="columnRetransmits" msprop:Generator_ColumnPropNameInTable="RetransmitsColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="SWS_x0020_Count" msprop:Generator_UserColumnName="SWS Count" msprop:Generator_ColumnPropNameInRow="SWS_Count" msprop:Generator_ColumnVarNameInTable="columnSWS_Count" msprop:Generator_ColumnPropNameInTable="SWS_CountColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

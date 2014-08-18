@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="csi.see.classlib1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sqlConnect_master" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=True;Persist Security Info=False;Pooling=False;Data Source=.\SQLEXPRESS;Initial Catalog=master</Value>
+    </Setting>
+    <Setting Name="sqlConnect_common" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=True;Persist Security Info=False;Pooling=False;Data Source=.\SQLEXPRESS;Initial Catalog=SeeCommon</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

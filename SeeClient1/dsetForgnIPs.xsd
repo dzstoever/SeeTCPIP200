@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsetForgnIPs" targetNamespace="http://tempuri.org/dsetForgnIPs.xsd" xmlns:mstns="http://tempuri.org/dsetForgnIPs.xsd" xmlns="http://tempuri.org/dsetForgnIPs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsetForgnIPs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsetForgnIPs" msprop:Generator_DataSetName="dsetForgnIPs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TrafficMain" msprop:Generator_UserTableName="TrafficMain" msprop:Generator_RowDeletedName="TrafficMainRowDeleted" msprop:Generator_TableClassName="TrafficMainDataTable" msprop:Generator_RowChangedName="TrafficMainRowChanged" msprop:Generator_RowClassName="TrafficMainRow" msprop:Generator_RowChangingName="TrafficMainRowChanging" msprop:Generator_RowEvArgName="TrafficMainRowChangeEvent" msprop:Generator_RowEvHandlerName="TrafficMainRowChangeEventHandler" msprop:Generator_TablePropName="TrafficMain" msprop:Generator_TableVarName="tableTrafficMain" msprop:Generator_RowDeletingName="TrafficMainRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DTime" msprop:Generator_UserColumnName="DTime" msprop:Generator_ColumnPropNameInRow="DTime" msprop:Generator_ColumnVarNameInTable="columnDTime" msprop:Generator_ColumnPropNameInTable="DTimeColumn" type="xs:dateTime" />
+              <xs:element name="InIP" msprop:Generator_UserColumnName="InIP" msprop:Generator_ColumnPropNameInRow="InIP" msprop:Generator_ColumnVarNameInTable="columnInIP" msprop:Generator_ColumnPropNameInTable="InIPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="InTCP" msprop:Generator_UserColumnName="InTCP" msprop:Generator_ColumnPropNameInRow="InTCP" msprop:Generator_ColumnVarNameInTable="columnInTCP" msprop:Generator_ColumnPropNameInTable="InTCPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="InUDP" msprop:Generator_UserColumnName="InUDP" msprop:Generator_ColumnPropNameInRow="InUDP" msprop:Generator_ColumnVarNameInTable="columnInUDP" msprop:Generator_ColumnPropNameInTable="InUDPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="InICMP" msprop:Generator_UserColumnName="InICMP" msprop:Generator_ColumnPropNameInRow="InICMP" msprop:Generator_ColumnVarNameInTable="columnInICMP" msprop:Generator_ColumnPropNameInTable="InICMPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OutIP" msprop:Generator_UserColumnName="OutIP" msprop:Generator_ColumnPropNameInRow="OutIP" msprop:Generator_ColumnVarNameInTable="columnOutIP" msprop:Generator_ColumnPropNameInTable="OutIPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OutTCP" msprop:Generator_UserColumnName="OutTCP" msprop:Generator_ColumnPropNameInRow="OutTCP" msprop:Generator_ColumnVarNameInTable="columnOutTCP" msprop:Generator_ColumnPropNameInTable="OutTCPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OutUDP" msprop:Generator_UserColumnName="OutUDP" msprop:Generator_ColumnPropNameInRow="OutUDP" msprop:Generator_ColumnVarNameInTable="columnOutUDP" msprop:Generator_ColumnPropNameInTable="OutUDPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OutICMP" msprop:Generator_UserColumnName="OutICMP" msprop:Generator_ColumnPropNameInRow="OutICMP" msprop:Generator_ColumnVarNameInTable="columnOutICMP" msprop:Generator_ColumnPropNameInTable="OutICMPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NonIP" msprop:Generator_UserColumnName="NonIP" msprop:Generator_ColumnPropNameInRow="NonIP" msprop:Generator_ColumnVarNameInTable="columnNonIP" msprop:Generator_ColumnPropNameInTable="NonIPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Misdirected" msprop:Generator_UserColumnName="Misdirected" msprop:Generator_ColumnPropNameInRow="Misdirected" msprop:Generator_ColumnVarNameInTable="columnMisdirected" msprop:Generator_ColumnPropNameInTable="MisdirectedColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Refused" msprop:Generator_UserColumnName="Refused" msprop:Generator_ColumnPropNameInRow="Refused" msprop:Generator_ColumnVarNameInTable="columnRefused" msprop:Generator_ColumnPropNameInTable="RefusedColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TrafficMain" />
+      <xs:field xpath="mstns:DTime" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
